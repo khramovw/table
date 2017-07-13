@@ -1,0 +1,611 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="css/style.css">
+    <title></title>
+</head>
+<body>
+    <div class="container">
+        <form action="">
+            <div class="wraper">
+                <div class="publish">
+                    <div class="row">
+                        <div class="title">Publish point</div>
+                        <div class="input-block">
+                            <div class="select-name">
+                                <label for="inp-name">Name</label>
+                                <input type="text"  id="inp-name">
+                            </div>
+                            <div class="select-name">
+                                <label for="inp-deesc">Deescription</label>
+                                <input type="text"  id="inp-deesc">
+                            </div>
+                        </div>
+                        <div class="input-group">
+                            <div class="select-group">
+                                <div class="select-block">
+                                    <input id="vod" type="radio" name="publish-radio" valu="1" checked>
+                                    <label for="publish-radio">VOD</label>
+                                </div>
+                                <div class="select-block">
+                                    <input id="live" type="radio" name="publish-radio" valu="2">
+                                    <label for="publish-radio">Live</label>
+                                </div>
+                            </div>
+                            <div class="select-group">
+                                <div class="select-block">
+                                    <input id="rtmp" type="radio" name="publish-radio" valu="3" disabled>
+                                    <label for="publish-radio">RTMP</label>
+                                </div>
+                                <div class="group-rtsp">
+                                    <div class="select-block">
+                                        <input id="rtsp" type="radio" name="publish-radio" valu="4" disabled>
+                                        <label for="publish-radio">RTSP</label>
+                                    </div>
+
+                                    <input id="rtsp-input" type="text" placeholder="192.154.8.7" disabled>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="smill">
+                    <div class="row">
+                        <div class="title">Smil</div>
+                        <table>
+                            <tr>
+                                <th>1</th>
+                                <td class="select-name">
+                                    <label for="1bit">Bitrate</label>
+                                    <input type="text"  id="1bit">
+                                </td>
+                                <td class="select-name">
+                                    <label for="1bit">Extantion</label>
+                                    <input type="text"  id="1bit">
+                                </td>
+                                <td class="select-name">
+                                    <label for="1bit">Width</label>
+                                    <input type="text"  id="1bit">
+                                </td>
+                                <td class="select-name">
+                                    <label for="1bit">Height</label>
+                                    <input type="text"  id="1bit">
+                                </td>
+                                <td class="select-name">
+                                    <label for="1lang">Language</label>
+                                    <input type="text"  id="1bit">
+                                </td>
+                            </tr>
+                            <tr>
+                            <tr>
+                                <th>2</th>
+                                <td class="select-name">
+                                    <input type="text"  id="1bit">
+                                </td>
+                                <td class="select-name">
+                                    <input type="text"  id="1bit">
+                                </td>
+                                <td class="select-name">
+                                    <input type="text"  id="1bit">
+                                </td>
+                                <td class="select-name">
+                                    <input type="text"  id="1bit">
+                                </td>
+                                <td class="select-name">
+                                    <input type="text"  id="1bit">
+                                </td>
+                            </tr>
+                            <tr>
+                                <th>3</th>
+                                <td class="select-name">
+                                    <input type="text"  id="1bit">
+                                </td>
+                                <td class="select-name">
+                                    <input type="text"  id="1bit">
+                                </td>
+                                <td class="select-name">
+                                    <input type="text"  id="1bit">
+                                </td>
+                                <td class="select-name">
+                                    <input type="text"  id="1bit">
+                                </td>
+                                <td class="select-name">
+                                    <input type="text"  id="1bit">
+                                </td>
+                            </tr>
+                            <tr>
+                                <th>4</th>
+                                <td class="select-name">
+                                    <input type="text"  id="1bit">
+                                </td>
+                                <td class="select-name">
+                                    <input type="text"  id="1bit">
+                                </td>
+                                <td class="select-name">
+                                    <input type="text"  id="1bit">
+                                </td>
+                                <td class="select-name">
+                                    <input type="text"  id="1bit">
+                                </td>
+                                <td class="select-name">
+                                    <input type="text"  id="1bit">
+                                </td>
+                            </tr>
+                            <tr>
+                                <th>5</th>
+                                <td class="select-name">
+                                    <input type="text"  id="1bit">
+                                </td>
+                                <td class="select-name">
+                                    <input type="text"  id="1bit">
+                                </td>
+                                <td class="select-name">
+                                    <input type="text"  id="1bit">
+                                </td>
+                                <td class="select-name">
+                                    <input type="text"  id="1bit">
+                                </td>
+                                <td class="select-name">
+                                    <input type="text"  id="1bit">
+                                </td>
+                            </tr>
+                        </table>
+                        <div class="sort-smill">
+                            <div class="srt-name">
+                                <div class="smil-name">
+                                    <label for="sl-name">Smill-name</label>
+                                    <input type="text"  id="sl-name">
+                                </div>
+                            </div>
+                            <div class="srt-bit">
+                                <div class="smil-name">
+                                    <label for="sl-b">Audio bitrat</label>
+                                    <input type="text"  id="sl-b">
+                                </div>
+                            </div>
+                            <div class="srt-s-m">
+                                <div class="smil-name">
+                                    <label for="sl-s-m">S-or-M</label>
+                                    <input type="text"  id="sl-s-m">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="wraper">
+                <div class="server_list">
+                    <div class="row">
+                        <div class="title">Server list</div>
+                        <div class="headline">
+                            <span>Server name</span>
+                            <span>Origin</span>
+                            <span>Area</span>
+                            <span>Concurrent</span>
+                            <span>Default</span>
+                            <span>Reset</span>
+                        </div>
+                        <table>
+                            <tr>
+                                <td>
+                                    <select name="server-name" id="ser-name">
+                                        <option value="1">Cast-TV</option>
+                                        <option value="2">Il28</option>
+                                        <option value="3">Someting</option>
+                                        <option value="3">Anyting</option>
+                                    </select>
+                                </td>
+                                <td>
+                                    <input type="checkbox" name="c1">
+                                </td>
+                                <td>EV</td>
+                                <td><input type="text" id="s-list" placeholder="NAME"></td>
+                                <td>
+                                    <input type="radio" name="c1" valu="1" checked>
+                                </td>
+                                <td>
+                                    <button class="reset-ico" type="reset"></button>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <select name="server-name" id="ser-name">
+                                        <option value="1">Il28</option>
+                                        <option value="2">Cast-TV</option>
+                                        <option value="3">Someting</option>
+                                        <option value="3">Anyting</option>
+                                    </select>
+                                </td>
+                                <td>
+                                    <input type="checkbox" name="c1">
+                                </td>
+                                <td>IL</td>
+                                <td><input type="text" id="s-list" placeholder="NAME"></td>
+                                <td>
+                                    <input type="radio" name="c1" valu="1">
+                                </td>
+                                <td>
+                                    <button class="reset-ico" type="reset"></button>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <select name="server-name" id="ser-name">
+                                        <option value="1">Il28</option>
+                                        <option value="2">Cast-TV</option>
+                                        <option value="3">Someting</option>
+                                        <option value="3">Anyting</option>
+                                    </select>
+                                </td>
+                                <td>
+                                    <input type="checkbox" name="c1" checked>
+                                </td>
+                                <td></td>
+                                <td><input type="text" id="s-list" placeholder="NAME"></td>
+                                <td>
+                                    <input type="radio" name="c1" valu="1">
+                                </td>
+                                <td>
+                                    <button class="reset-ico" type="reset"></button>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <select name="server-name" id="ser-name">
+                                        <option value="1">Il28</option>
+                                        <option value="2">Cast-TV</option>
+                                        <option value="3">Someting</option>
+                                        <option value="3">Anyting</option>
+                                    </select>
+                                </td>
+                                <td>
+                                    <input type="checkbox" name="c1">
+                                </td>
+                                <td></td>
+                                <td><input type="text" id="s-list" placeholder="NAME"></td>
+                                <td>
+                                    <input type="radio" name="c1" valu="1">
+                                </td>
+                                <td>
+                                    <button class="reset-ico" type="reset"></button>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <select name="server-name" id="ser-name">
+                                        <option value="1">Il28</option>
+                                        <option value="2">Cast-TV</option>
+                                        <option value="3">Someting</option>
+                                        <option value="3">Anyting</option>
+                                    </select>
+                                </td>
+                                <td>
+                                    <input type="checkbox" name="c1">
+                                </td>
+                                <td>IL</td>
+                                <td><input type="text" id="s-list" placeholder="NAME"></td>
+                                <td>
+                                    <input type="radio" name="c1" valu="1">
+                                </td>
+                                <td>
+                                    <button class="reset-ico" type="reset"></button>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <select name="server-name" id="ser-name">
+                                        <option value="1">Il28</option>
+                                        <option value="2">Cast-TV</option>
+                                        <option value="3">Someting</option>
+                                        <option value="3">Anyting</option>
+                                    </select>
+                                </td>
+                                <td>
+                                    <input type="checkbox" name="c1">
+                                </td>
+                                <td></td>
+                                <td><input type="text" id="s-list" placeholder="NAME"></td>
+                                <td>
+                                    <input type="radio" name="c1" valu="1">
+                                </td>
+                                <td>
+                                    <button class="reset-ico" type="reset"></button>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <select name="server-name" id="ser-name">
+                                        <option value="1">Il28</option>
+                                        <option value="2">Cast-TV</option>
+                                        <option value="3">Someting</option>
+                                        <option value="3">Anyting</option>
+                                    </select>
+                                </td>
+                                <td>
+                                    <input type="checkbox" name="c1">
+                                </td>
+                                <td></td>
+                                <td><input type="text" id="s-list" placeholder="NAME"></td>
+                                <td>
+                                    <input type="radio" name="c1" valu="1">
+                                </td>
+                                <td>
+                                    <button class="reset-ico" type="reset"></button>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <select name="server-name" id="ser-name">
+                                        <option value="1">Il28</option>
+                                        <option value="2">Cast-TV</option>
+                                        <option value="3">Someting</option>
+                                        <option value="3">Anyting</option>
+                                    </select>
+                                </td>
+                                <td>
+                                    <input type="checkbox" name="c1">
+                                </td>
+                                <td></td>
+                                <td><input type="text" id="s-list" placeholder="NAME"></td>
+                                <td>
+                                    <input type="radio" name="c1" valu="1">
+                                </td>
+                                <td>
+                                    <button class="reset-ico" type="reset"></button>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <select name="server-name" id="ser-name">
+                                        <option value="1">Il28</option>
+                                        <option value="2">Cast-TV</option>
+                                        <option value="3">Someting</option>
+                                        <option value="3">Anyting</option>
+                                    </select>
+                                </td>
+                                <td>
+                                    <input type="checkbox" name="c1">
+                                </td>
+                                <td></td>
+                                <td><input type="text" id="s-list" placeholder="NAME"></td>
+                                <td>
+                                    <input type="radio" name="c1" valu="1">
+                                </td>
+                                <td>
+                                    <button class="reset-ico" type="reset"></button>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <select name="server-name" id="ser-name">
+                                        <option value="1">Il28</option>
+                                        <option value="2">Cast-TV</option>
+                                        <option value="3">Someting</option>
+                                        <option value="3">Anyting</option>
+                                    </select>
+                                </td>
+                                <td>
+                                    <input type="checkbox" name="c1">
+                                </td>
+                                <td></td>
+                                <td><input type="text" id="s-list" placeholder="NAME"></td>
+                                <td>
+                                    <input type="radio" name="c1" valu="1">
+                                </td>
+                                <td>
+                                    <button class="reset-ico" type="reset"></button>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <select name="server-name" id="ser-name">
+                                        <option value="1">Il28</option>
+                                        <option value="2">Cast-TV</option>
+                                        <option value="3">Someting</option>
+                                        <option value="3">Anyting</option>
+                                    </select>
+                                </td>
+                                <td>
+                                    <input type="checkbox" name="c1">
+                                </td>
+                                <td></td>
+                                <td><input type="text" id="s-list" placeholder="NAME"></td>
+                                <td>
+                                    <input type="radio" name="c1" valu="1">
+                                </td>
+                                <td>
+                                    <button class="reset-ico" type="reset"></button>
+                                </td>
+                            </tr>
+                        </table>
+                    </div>
+                </div>
+                <div class="templet">
+                    <div class="row">
+                        <div class="title">Template</div>
+                        <div class="templet-block">
+                            <div class="select-block">
+                                <input id="loc-il" type="radio" name="loc-il" valu="1" checked>
+                                <label for="loc-il">Location: <span>IL</span></label>
+                            </div>
+                            <div class="templet-row">
+                                <div class="select-block">
+                                    <input type="radio" name="templ" id="1">
+                                    <label for="templ">IL28.cast-tv.com</label>
+                                    <div class="select-row">
+                                        <div class="rows">
+                                            <div >
+                                                <a href=""><span class="triangle-up"></span></a>
+                                            </div>
+                                            <div >
+                                                <a href="#"><span class="triangle-down"></span></a>
+                                            </div>
+                                        </div>
+                                        <a href="#">
+                                            <span class="close-ico"></span>
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="select-block">
+                                    <input type="radio" name="templ" id="2">
+                                    <label for="templ">ca15.cast-tv.com</label>
+                                    <div class="select-row">
+                                        <div class="rows">
+                                            <div >
+                                                <a href=""><span class="triangle-up"></span></a>
+                                            </div>
+                                            <div >
+                                                <a href="#"><span class="triangle-down"></span></a>
+                                            </div>
+                                        </div>
+                                        <a href="#">
+                                            <span class="close-ico"></span>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="templet-block">
+                            <div class="select-block">
+                                <input id="loc-il" type="radio" name="loc-il" valu="1">
+                                <label for="loc-il">Location: <span>IL</span></label>
+                            </div>
+                            <div class="templet-row">
+                                <div class="select-block">
+                                    <input type="radio" name="templ" id="1">
+                                    <label for="templ">IL28.cast-tv.com</label>
+                                    <div class="select-row">
+                                        <div class="rows">
+                                            <div >
+                                                <a href=""><span class="triangle-up"></span></a>
+                                            </div>
+                                            <div >
+                                                <a href="#"><span class="triangle-down"></span></a>
+                                            </div>
+                                        </div>
+                                        <a href="#">
+                                            <span class="close-ico"></span>
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="select-block">
+                                    <input type="radio" name="templ" id="2">
+                                    <label for="templ">ca15.cast-tv.com</label>
+                                    <div class="select-row">
+                                        <div class="rows">
+                                            <div >
+                                                <a href=""><span class="triangle-up"></span></a>
+                                            </div>
+                                            <div >
+                                                <a href="#"><span class="triangle-down"></span></a>
+                                            </div>
+                                        </div>
+                                        <a href="#">
+                                            <span class="close-ico"></span>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="templet-block">
+                            <div class="select-block">
+                                <input id="loc-il" type="radio" name="loc-il" valu="3">
+                                <label for="loc-il">Location: <span>IL</span></label>
+                            </div>
+                            <div class="templet-row">
+                                <div class="select-block">
+                                    <input type="radio" name="templ" id="1">
+                                    <label for="templ">IL28.cast-tv.com</label>
+                                    <div class="select-row">
+                                        <div class="rows">
+                                            <div >
+                                                <a href=""><span class="triangle-up"></span></a>
+                                            </div>
+                                            <div >
+                                                <a href="#"><span class="triangle-down"></span></a>
+                                            </div>
+                                        </div>
+                                        <a href="#">
+                                            <span class="close-ico"></span>
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="select-block">
+                                    <input type="radio" name="templ" id="2">
+                                    <label for="templ">ca15.cast-tv.com</label>
+                                    <div class="select-row">
+                                        <div class="rows">
+                                            <div >
+                                                <a href=""><span class="triangle-up"></span></a>
+                                            </div>
+                                            <div >
+                                                <a href="#"><span class="triangle-down"></span></a>
+                                            </div>
+                                        </div>
+                                        <a href="#">
+                                            <span class="close-ico"></span>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="templet-block">
+                            <div class="select-block">
+                                <input id="loc-il" type="radio" name="loc-il" valu="4">
+                                <label for="loc-il">Location: <span>IL</span></label>
+                            </div>
+                            <div class="templet-row">
+                                <div class="select-block">
+                                    <input type="radio" name="templ" id="1">
+                                    <label for="templ">IL28.cast-tv.com</label>
+                                    <div class="select-row">
+                                        <div class="rows">
+                                            <div >
+                                                <a href=""><span class="triangle-up"></span></a>
+                                            </div>
+                                            <div >
+                                                <a href="#"><span class="triangle-down"></span></a>
+                                            </div>
+                                        </div>
+                                        <a href="#">
+                                            <span class="close-ico"></span>
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="select-block">
+                                    <input type="radio" name="templ" id="2">
+                                    <label for="templ">ca15.cast-tv.com</label>
+                                    <div class="select-row">
+                                        <div class="rows">
+                                            <div >
+                                                <a href=""><span class="triangle-up"></span></a>
+                                            </div>
+                                            <div >
+                                                <a href="#"><span class="triangle-down"></span></a>
+                                            </div>
+                                        </div>
+                                        <a href="#">
+                                            <span class="close-ico"></span>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="btn-row">
+                <input class="sub" type="submit">
+            </div>
+        </form>
+    </div>
+    <!-- jQuery -->
+    <script src="js/jquery-3.2.1.min.js"></script>
+    <script src="js/plugin.js"></script>
+    <script src="js/filter.js"></script>
+</body>
+</html>
